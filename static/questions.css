@@ -1,0 +1,113 @@
+html { 
+background-color:#F0F8FF;
+}
+h2{
+text-align:center;
+color:black;
+font-size:20pt;
+}
+h1{
+text-align:center;
+color:#000080;
+margin-top:10px;
+}
+.btnlogout
+{
+  width: 140px;
+  height: 40px;
+  color: white;
+  border :1px black;
+  border-radius: 10px 10px 10px 10px;
+  text-align:center;
+  font-size:15pt;
+  font-style:bold;
+  background:#000080;
+  cursor: pointer;
+}
+h3{
+text-align:left;
+color:black;
+font-size:16pt;
+}
+p{
+ white-space: pre-line;
+ color:black;
+ font-size:15pt;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #1E90FF;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  color:white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #000080;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #000080;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  background-color:white;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none; 
+}
+form input[type=submit] {
+  width: 140px;
+  height: 40px;
+  color: white;
+  border :1px black;
+  border-radius: 10px 10px 10px 10px;
+  text-align:center;
+  font-size:15pt;
+  font-style:bold;
+  background:#000080;
+  cursor: pointer;
+}
+form {
+  position: relative;
+  width: 1260px;
+  margin: 175 auto;
+  background: rgba(130,130,130,.02);
+  padding: 20px 22px;
+  border: 5px solid;
+  border-top-color: rgba(255,255,255,0);
+  border-left-color: rgba(255,255,255,.4);
+  border-bottom-color: rgba(60,60,60,.4);
+  border-right-color: rgba(60,60,60,.4);
+}
+.duel {
+  display: inline-block; 
+  width: 100%;
+}
+.timer {
+  float: left;
+}
+.logot {
+  float: right;
+}
+p.time
+{
+  color:#000080;
+  font-size : 15pt;
+  font-weight:bold;
+}

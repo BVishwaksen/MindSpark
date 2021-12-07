@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <link rel="icon" href="/static/logo.png" />
+    <title>Code Editor</title>
+
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="/static/newd.css">
+</head>
+
+<style>
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: blue; 
+}
+</style>
+<body id="index" class="home">
+
+<div id="links">
+
+<ul>
+
+<li>
+Choose Language:
+</li>
+<li>
+<a href="/editor">C Code</a>
+</li>
+
+<li>
+<a href="/cpp">C++ Code</a>
+</li>
+
+<li>
+<a href="/py">
+Python Code</a>
+</li>
+
+<li>
+<a href="/java">Java Code</a>
+</li>
+
+</ul>
+</div>
+
+<div id="content">
+
+    <!-- ************  CODING ZONE  ************ -->
+
+    <div id="code">
+
+        <form method="post" action="{{ url_for(target) }}">
+
+            <div id="title-code" class="head-section">
+
+              Source Code
+
+            </div>
+
+	    <div class="container" align="right">  
+	    
+	    <input type="text" name="qno" placeholder="Enter Question Number Here" value="{{value}}" class="ques" required/> 
+            <input id="launch-button" name="submit" class="button" type="submit" value="Run" />
+	    <input id="submit-button" name="submit" class="button" type="submit" value="Submit" />
+	    </div>
+            {% block code %}
+
+            {% endblock %}
+
+        </form>
+
+    </div>
+
+    
+    <!-- ************ RUNNING ZONE RESULTS ************ -->
+
+    
+    <div id="result">
+
+        <div id="title-result" class="head-section">
+
+            Output result
+
+        </div>
+
+        {% block run %}
+
+        {% endblock %}
+
+        </div>
+
+    
+    <!-- ************ COMPILATION RESULTS ZONE ************ -->
+
+    
+    <div id="compile">
+
+        <div id="title-compile" class="head-section">
+
+            Compilation / Output
+
+        </div>
+
+        {% block comp %}
+
+        {% endblock %}
+
+    </div>
+</div>
+
+
+
+<script src="{{ url_for('static', filename='ace/ace.js') }}"></script>
+<script>
+
+    // The Ace editor needs divs instead of textareas
+
+    // So we hide the textarea and show a div instead
+
+    var editorElement = document.getElementById("text-code");
+
+    editorElement.classList.add("hidden");
+
+    document.getElementById("text-code-ace").classList.remove("hidden");
+
+
+    // Set up the editor
+
+    var editor = ace.edit("text-code-ace");
+
+    editor.setTheme("ace/theme/eclipse");
+
+    var language = ("{{ target }}" === "runpy") ? "python" : "c_cpp";
+    editor.getSession().setMode("ace/mode/"+language);
+    editor.onPaste=editor.onCut=editor.onCopy=editor.getCopyText=function(){return ""};
+    // Make sure we copy the content of the editor to the textarea before posting
+
+    // its content to the server
+
+    document.getElementById("launch-button").addEventListener("click", function () 
+{
+        editorElement.innerHTML = editor.getValue();
+    });
+
+</script>
+</body>
+
+</html>

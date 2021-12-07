@@ -1,0 +1,149 @@
+html { 
+   background-color:#F0F8FF;
+}
+body {
+color: #000305;
+    font-size: 87.5%; /* Base font size: 14px */
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.429;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+
+li {
+   display: inline
+; font-size:13pt;}
+
+#content {
+    position: absolute;
+    top: 50px;
+    min-height: 600px;
+    min-width: 900px;
+    width: 100%;
+    height: 90%;
+}
+
+
+#code {
+    position: absolute;
+    height: 60%;
+    min-height: 350px;
+    min-width: 400px;
+    left: 10px;
+    top: 5px;
+    width: 48%;
+}
+
+
+#result {
+    position: absolute;
+    height: 60%;
+    min-height: 350px;
+    min-width: 400px;
+    right: 10px;
+    top: 5px;
+    width: 48%;
+}
+
+
+#compile {
+    position: absolute;
+    right: 10px;
+    left: 10px;
+    min-height: 100px;
+    min-width: 400px;
+    /*width: 100%;*/
+    height: 40%;
+    bottom: 0px;
+}
+
+
+
+.head-section {
+    position: absolute;
+    top: 0px;
+    font-weight:bold; font-size:13pt;
+}
+
+
+#title-code {
+    position: absolute;
+    left: 5px; color:black
+}
+
+
+#title-result {
+    position: absolute;
+    left: 5px;
+ color:black}
+
+
+#title-compile{
+    position: absolute;
+    left: 5px; color:black}
+
+
+#text-code, #text-code-ace {
+ font-size:10pt;   position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 80%;
+}
+
+
+#text-code-ace {
+    padding: 2px;
+    border: 1px solid rgb(169, 169, 169);
+}
+
+
+#text-result {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 80%;
+}
+
+
+#text-compile {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    width: 98%;
+    height: 80%;
+}
+
+
+#text-testcases {
+        top: 50px;
+    left: 5px;
+    width: 98%;
+    height: 10%;
+}
+
+
+.hidden {
+    display: none;
+}
+.button {
+	display: inline-block;
+	  width: 140px;
+  height:35px;
+  color: white;
+  border :1px black;
+  border-radius: 10px 10px 10px 10px;
+  text-align:center;
+  font-size:15pt;
+  font-style:bold;
+  background:#000080;
+  cursor: pointer;
+ }
+.ques
+{
+   width:180px;
+   height:30px;
+   color:#000080;
+}
+

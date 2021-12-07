@@ -1,0 +1,57 @@
+html { 
+background-color:#F0F8FF;
+}
+h2
+{
+  text-align:center;
+  color:#523179;
+  text-style:bold;
+}
+h1
+{
+  text-align:center;
+  color:#523179;
+  text-style:bold;
+}
+
+h3
+{
+  color:black;
+  margin-left:10px;
+  font-size:17pt;
+}
+h4
+{
+  text-align:center;
+  font-size:15pt;
+  color:white;
+}
+p.rules
+{
+  color:#000080;
+  margin-left:10px;
+  font-size:17pt;
+  line-height:2; 
+}
+p.agree
+{
+  color:black;
+  text-align:right;
+  font-size:17pt;
+  font-weight:bold;
+  margin-right:50px;
+}
+.btnlogout
+{
+  width: 140px;
+  height: 40px;
+  color: white;
+  border :1px black;
+  border-radius: 10px 10px 10px 10px;
+  text-align:center;
+  font-size:15pt;
+  font-style:bold;
+  background:#000080;
+  cursor: pointer;
+}
+

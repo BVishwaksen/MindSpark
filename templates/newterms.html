@@ -1,0 +1,58 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/newterms.css">
+    	<link rel="icon" href="/static/logo.png" />
+    	<title>terms and conditions</title>
+<script>
+ 	function disableSubmit() {
+  	document.getElementById("submit").disabled = true;
+ 	}
+
+  	function activateButton(element) {
+
+      	if(element.checked) {
+        	document.getElementById("submit").disabled = false;
+       	}
+       	else  {
+        	document.getElementById("submit").disabled = true;
+        }
+
+  	}
+</script>
+</head>
+<form action="" method="POST">
+   <h1 class="contest">CODEJAM
+   </h1>
+   <h2>An excellent opportunity to unlock your logical ability and coding skills</h2>
+   <h3>TERMS AND CONDITIONS:</h3>
+   <p class="rules">
+
+   * A screening test will be conducted. Screening test is an individual event.<br>
+
+   * Shortlisted students will be promoted to final round.<br>
+
+   * In final round, students may do pair programming by forming a pair with only the shortlisted students or else they may take part in the final round individually.<br>
+
+   * Participants can use any programming languages provided(C, CPP, Java, Python).<br>
+   
+   * Complexity of code is also considered in judgement.<br>
+
+   * The decision of the judges will be treated as final and binding on all.<br>
+  </p>
+  <h3>INSTRUCTIONS:</h3>
+  <p class="rules">
+  * Please provide the question number in code editor while running and submitting your code<br>
+  * Please run your code before submitting it
+  </p>
+<p class="agree">
+<body onload="disableSubmit()">
+ <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)" style="width:20px;height:20px;">  I Agree Terms & Coditions
+<br><br>
+  <input type="submit" name="submit" id="submit" value="accept" style="font-size:15pt;background-color:white;border:2px solid black;padding:3px">
+</body>
+</p>
+<div align="center">
+<button type="submit" name="submit" id="myBtn" value="logout" class="btnLogout">Logout</button>
+</div>
+</form>
+</html>
